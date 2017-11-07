@@ -4,3 +4,6 @@ include $(FUSE_ROOT)/libexfat/Android.mk
 include $(FUSE_ROOT)/fuse/Android.mk
 include $(FUSE_ROOT)/mkfs/Android.mk
 include $(FUSE_ROOT)/fsck/Android.mk
+
+LOCAL_SDCLANG := false
+LOCAL_CLANG := false

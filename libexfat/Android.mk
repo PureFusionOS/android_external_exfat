@@ -1,3 +1,5 @@
+LOCAL_CLANG_EXCEPTION_PROJECTS += external/exfat
+LOCAL_CLANG_EXCEPTION_PROJECTS += external/exfat/libexfat
 LOCAL_PATH := $(call my-dir)
 
 common_src_files = cluster.c io.c log.c lookup.c mount.c node.c time.c utils.c
@@ -18,3 +20,6 @@ LOCAL_SRC_FILES = $(common_src_files)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_STATIC_LIBRARIES := libfuse_static libexfat_static
 include $(BUILD_STATIC_LIBRARY)
+
+LOCAL_SDCLANG := false
+LOCAL_CLANG := false

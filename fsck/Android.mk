@@ -22,3 +22,5 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH) \
 LOCAL_STATIC_LIBRARIES := libfuse_static libexfat_static
 include $(BUILD_STATIC_LIBRARY)
 
+LOCAL_SDCLANG := false
+LOCAL_CLANG := false
